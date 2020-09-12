@@ -1,0 +1,13 @@
+version: '3'
+services: 
+  
+  aria-web:
+          image: "moyuzhijia/aria-ng:latest"
+          ports: 
+           - "30000:80"
+  aria:
+          image: "moyuzhijia/aria-server:latest"
+          ports: 
+           - "6800:6800"
+          volumes: 
+           - /mnt/ssd/aria_data:/data 
